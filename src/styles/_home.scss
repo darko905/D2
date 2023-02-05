@@ -1,0 +1,47 @@
+.home{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assests/home-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__content {
+        padding-top: 4.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: $big-font-size;
+        margin: $mb-2 0;
+        color: $body-color;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-size: $h3-font-size;
+        font-weight: $font-normal;
+        margin-bottom: $mb-2;
+        color: $body-color;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .home{
+        background-size: cover;
+
+        &__content{
+            padding-top: 10rem;
+        }
+
+        &__title{
+            font-size: 2.5rem;
+        }
+    }
+    
+}

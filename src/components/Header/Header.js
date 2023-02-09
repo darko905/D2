@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
+import Logo from '../../assests/D2_Logo.png';
 
 const Header = () => {
     window.addEventListener('scroll', function(){
@@ -19,7 +20,9 @@ const Header = () => {
   return (
     <header className='header'>
             <nav className='nav container'>
-                <a href='#home' className='nav__logo'>D2</a>
+                <a href='#home' className='nav__logo'>
+                    <img src={Logo} alt="Logo" className='nav__logo-img'/>
+                </a>
 
                 <div className={Toogle ? "nav__menu show-menu": "nav__menu"}>
                     <ul className='nav__list '>

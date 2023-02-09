@@ -4,6 +4,7 @@
 @import './variables';
 @import './header';
 @import './home';
+@import './about';
 
 
 
@@ -58,29 +59,7 @@ h1::before {
 h1::after {
     margin-left: 0.75em;
 }
-/*-----h2 before----*/
-h2 {
-    position: relative;
-}
 
-h2::before,
-h2::after {
-    content: '';
-    width: 150px;
-    height: 3px;
-    display: inline-block;
-    background-color: $title-color;
-    vertical-align: 0.3em;
-    margin: 0 -100%;
-}
-
-h2::before {
-    margin-right: 0.75em;
-}
-
-h2::after {
-    margin-left: 0.75em;
-}
 
 ul {
     list-style: none;
@@ -138,7 +117,7 @@ img {
 .button {
     display: inline-block;
     background-color: $title-color;
-    color: $container-color;
+    color: $body-color;
     padding: 1.25rem 3rem;
     font-weight: $font-medium;
 }

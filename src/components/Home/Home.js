@@ -7,8 +7,10 @@ const Home = () => {
                 <div className='home__content '>
                 
                     <div className='home__data'>
-                        <h1 className='home__title'>D2 Design</h1>
-                        <h3 className='home__subtitle'>Mi Vam pruzamo sigurnost, kvalitet, poverljivost</h3>
+                        
+                        <h1 className='home__title'>MI VAM PRUZAMO</h1>
+                        <h3 className='home__subtitle'>sigurnost, kvalitet, poverljivost</h3>
+                        
                 
                         <button className='button button-flex'>Kontakt</button>
                     </div>

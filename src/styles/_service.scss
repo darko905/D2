@@ -6,6 +6,18 @@
     // background-size: 100% 100%;
     height: 90vh;
 }
+
+.ico__circle {
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 3.75;
+    margin: 10px auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px $title-color;
+    display: block;
+}
 .service__container{
     grid-template-columns: repeat(3, 350px);
     justify-content: center;
@@ -22,7 +34,8 @@
 
 .service__icons{
     font-size: 4rem;
-    margin-bottom: $mb-1;
+    padding: 10px;
+    // margin-bottom: $mb-1;
     color: $text-color;
 }
 .service__title{

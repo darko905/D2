@@ -191,6 +191,18 @@
   height: 90vh;
 }
 
+.ico__circle {
+  height: 80px;
+  width: 80px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 3.75;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px hsl(216deg, 100%, 55%);
+  display: block;
+}
+
 .service__container {
   grid-template-columns: repeat(3, 350px);
   justify-content: center;
@@ -206,7 +218,7 @@
 
 .service__icons {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  padding: 10px;
   color: hsl(213deg, 49%, 12%);
 }
 

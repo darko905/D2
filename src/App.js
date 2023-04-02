@@ -1,4 +1,5 @@
 import About from './components/About/About';
+import Counter from './components/Counter/Counter';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Service from './components/Service/Service';
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <About/>
       <Service/>
+      <Counter/>
     </main>
     </>
   );

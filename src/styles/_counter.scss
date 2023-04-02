@@ -1,0 +1,21 @@
+
+.counter{
+    height: 40vh;
+    background-color: $title-color-dark;
+    padding-top: 4rem;
+
+}
+.counter__container{
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 3rem;
+    
+
+}
+
+.counter__content{
+    text-align: center;
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 10px 15px;
+}

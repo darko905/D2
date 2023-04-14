@@ -186,10 +186,6 @@
     padding: 1rem;
   }
 }
-.service {
-  height: 130vh;
-}
-
 .ico__circle {
   height: 80px;
   width: 80px;
@@ -270,23 +266,16 @@
 }
 
 @media screen and (max-width: 992px) {
-  .service {
-    height: 120vh;
-  }
   .service__container {
     grid-template-columns: repeat(2, 270px);
   }
 }
 @media screen and (max-width: 768px) {
-  .service {
-    height: 150vh;
-  }
   .service__container {
     grid-template-columns: 1fr;
   }
 }
 .counter {
-  height: 40vh;
   background-color: hsl(213deg, 49%, 12%);
   padding-top: 4rem;
 }
@@ -299,11 +288,86 @@
 
 .counter__content {
   text-align: center;
-  background-color: #fff;
   border-radius: 10px;
   padding: 10px 15px;
 }
 
+.counter__icons {
+  font-size: 4rem;
+  padding: 10px;
+  color: #fff;
+}
+
+.ico__circle {
+  height: 80px;
+  width: 80px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 3.75;
+  margin: 15px auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px hsl(216deg, 100%, 55%);
+  display: block;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+
+.ico__circle:hover {
+  background-color: hsl(216deg, 100%, 55%);
+  color: white;
+  box-shadow: 0 0 0 10px hsl(197deg, 100%, 31%);
+  transition: all 500ms ease;
+}
+
+.ico__circle:hover .counter__icons {
+  color: white;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(50deg);
+  }
+  30% {
+    transform: rotate(80deg);
+  }
+  40% {
+    transform: rotate(110deg);
+  }
+  50% {
+    transform: rotate(140deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(250deg);
+  }
+  90% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.counter__title {
+  font-size: 2.25rem;
+}
+
+.counter__descritpion {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .counter__container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
 /*Base*/
 * {
   margin: 0;

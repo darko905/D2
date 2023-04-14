@@ -1,6 +1,6 @@
-.service{
-    height: 130vh;
-}
+// .service{
+//     height: 130vh;
+// }
 
 .ico__circle {
     height: 80px;
@@ -82,9 +82,9 @@
 }
 
 @media screen and (max-width: 992px) {
-    .service{
-        height: 120vh;
-    }
+    // .service{
+    //     height: 300vh;
+    // }
     .service__container{
         grid-template-columns: repeat(2, 270px);
     }
@@ -92,9 +92,9 @@
 }
 
 @media screen and (max-width: 768px) {
-    .service{
-        height: 150vh;
-    }
+    // .service{
+    //     height: 300vh;
+    // }
     .service__container{
         grid-template-columns: 1fr;
     }

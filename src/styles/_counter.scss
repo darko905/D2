@@ -1,8 +1,9 @@
 
 .counter{
-    height: 40vh;
+    // height: 40vh;
     background-color: $title-color-dark;
     padding-top: 4rem;
+    // color: aliceblue;
 
 }
 .counter__container{
@@ -15,7 +16,82 @@
 
 .counter__content{
     text-align: center;
-    background-color: $white-color;
+    // background-color: $white-color;
     border-radius: 10px;
     padding: 10px 15px;
+}
+
+.counter__icons{
+    font-size: 4rem;
+    padding: 10px;
+    color: $white-color;
+}
+.ico__circle {
+    height: 80px;
+    width: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 3.75;
+    margin: 15px auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px $title-color;
+    display: block;
+    cursor: pointer;
+    color: #1e1e1e;
+}
+.ico__circle:hover{
+    background-color: $title-color;
+    color: white;
+    box-shadow: 0 0 0 10px $subtitle-color;
+    transition: all 500ms ease;
+}
+.ico__circle:hover .counter__icons{
+    color: white;
+    animation: shake 0.5s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(50deg);
+    }
+    30%{
+        transform: rotate(80deg);
+    }
+    40%{
+        transform: rotate(110deg);
+    }
+    50%{
+        transform: rotate(140deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    70%{
+        transform: rotate(250deg);
+    }
+    90%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.counter__title{
+    font-size: $h1-font-size;
+}
+.counter__descritpion{
+    color: $white-color;
+    font-size: $h3-font-size;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .counter__container{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
 }

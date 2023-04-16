@@ -12,7 +12,13 @@
     }
 
     &__title {
-        margin-bottom: $mb-2-5;
+        margin-bottom: $mb-1;
+    }
+    &__subtitle{
+        font-size: $h3-font-size;
+        font-style: italic;
+        margin-bottom: $mb-0-5;
+        font-weight: bold;
     }
 
     &__descritpion {
@@ -47,3 +53,37 @@
         padding: 1rem;
     }
 }
+
+
+// .underline {
+//     position: relative;
+  
+//     &:before {
+//       width: 20%;
+//       height: 0.3rem;
+//       position: absolute;
+//       background: $title-color;
+//       content: "";
+//       left: 50%;
+//       bottom: -0.5rem;
+//       border-radius: 0.3rem;
+//       transform-origin: left center;
+//     }
+  
+//     &--bounce:before {
+      
+//       animation: bouncey-line 1s ease-in-out infinite alternate;
+//     }
+//   }
+  
+//   @keyframes bouncey-line {
+//     0% {
+//       transform: translateX(100vw) scaleX(2);
+//     }
+//     50% {
+//       transform: translateX(0) scaleX(0.5);
+//     }
+//     to {
+//       transform: scaleX(1);
+//     }
+//   }

@@ -1,0 +1,37 @@
+.projects{
+    &__container{
+        grid-template-columns: repeat(3, 350px);
+        justify-content: center;
+        gap: 3rem;
+    }
+    &__content{
+        text-align: center;
+        background-color: $white-color;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+    &__title{
+        font-size: $h3-font-size;
+        margin-bottom: $mb-1;
+    }
+    &__descritpion{
+        margin-bottom: $mb-1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects{
+        &__container{
+            grid-template-columns: repeat(2, 270px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects{
+        &__container{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+

@@ -37,12 +37,6 @@ const About = () => {
             U radu sa nama imaćete pristum svim vašim nalozima za oglašavanje, i
             kompletnu kontrolu nas raspodelom budzeta i njegovom potrošnjom.
           </p>
-          {/* <a href='#contact'>
-                        <button className='button button--flex'>
-                            
-                            Kontakt
-                        </button>
-                    </a> */}
         </div>
       </div>
     </section>

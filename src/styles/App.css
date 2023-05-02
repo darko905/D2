@@ -374,6 +374,35 @@
     height: auto;
   }
 }
+.projects__container {
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 3rem;
+}
+.projects__content {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.projects__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.projects__descritpion {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 270px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
 /*Base*/
 * {
   margin: 0;

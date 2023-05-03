@@ -42,7 +42,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#project' onClick={() => setActiveNav('#project')} className={activeNav === "#project" ? "nav__link active-link" : "nav__link"}>
+                            <a href='#projects' onClick={() => setActiveNav('#projects')} className={activeNav === "#project" ? "nav__link active-link" : "nav__link"}>
                                 PROJEKTI
                             </a>
                         </li>

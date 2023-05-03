@@ -403,6 +403,36 @@
     grid-template-columns: 1fr;
   }
 }
+.process__title {
+  display: inline;
+}
+
+.process__container {
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.process__content {
+  padding: 10px 15px;
+}
+
+.process__icons {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: hsl(213, 49%, 12%);
+}
+
+@media screen and (max-width: 992px) {
+  .process__container {
+    grid-template-columns: repeat(2, 270px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .process__container {
+    grid-template-columns: 1fr;
+  }
+}
 /*Base*/
 * {
   margin: 0;

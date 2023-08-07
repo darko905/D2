@@ -1,47 +1,52 @@
-.home{
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assests/home-bg.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.home {
+  // height: 100vh;
+  background: linear-gradient(to right, rgb(13, 17, 23, 0.8), rgb(0, 113, 252, 0.1)), url('../assests/hero-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media screen and (max-width: 768px) {
+    background-attachment: inherit;
+  }
+
+
+  &__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 100px;
+    margin: 1rem 0;
+    color: $text-color;
+
+    &-stroke {
+      -webkit-text-fill-color: rgb(13, 17, 23, 0); /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    font-size: $h3-font-size;
+    font-weight: $font-normal;
+    margin-bottom: $mb-2;
+    color: $body-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-size: cover;
 
     &__content {
-        padding-top: 4.5rem;
-        align-items: center;
-        text-align: center;
+      padding-top: 2rem;
     }
 
     &__title {
-        font-size: $big-font-size;
-        margin: 4rem 0;
-        color: $body-color;
+      font-size: 4.5rem;
     }
-
-    &__subtitle {
-        position: relative;
-        font-size: $h3-font-size;
-        font-weight: $font-normal;
-        margin-bottom: $mb-2;
-        color: $body-color;
-    }
-
+  }
 }
 
-
-
-
-
-@media screen and (max-width: 768px) {
-    .home{
-        background-size: cover;
-
-        &__content{
-            padding-top: 10rem;
-        }
-
-        &__title{
-            font-size: 1.5rem;
-        }
-    }
-    
-}

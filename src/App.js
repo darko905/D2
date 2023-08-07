@@ -1,5 +1,8 @@
 import About from './components/About/About';
-import Counter from './components/Counter/Counter';
+import Banner from './components/Banner/Banner';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+// import Counter from './components/Counter/Counter';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Process from './components/Process/Process';
@@ -14,10 +17,14 @@ function App() {
     <main className='main'>
       <Home/>
       <About/>
+      <Banner/>
       <Service/>
-      <Counter/>
+      {/* <Counter/> */}
       <Projects/>
       <Process/>
+      <Contact/>
+      <Footer/>
+
     </main>
     </>
   );

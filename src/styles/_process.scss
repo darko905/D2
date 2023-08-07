@@ -1,38 +1,53 @@
+.process {
+  background: linear-gradient(
+      to right,
+      rgb(13, 17, 23, 0.8),
+      rgb(0, 113, 252, 0.1)
+    ),
+    url("../assests/circle-lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.process__title{
+  @media screen and (max-width: 768px) {
+    background-attachment: inherit;
+  }
+  &__container{
+    margin-top: 3rem;
+  }
+  &__icons {
+    width: 65px;
+    height: 65px;
+    margin-bottom: $mb-1;
+  }
+  &__title {
     display: inline;
-    
-}
-
-.process__container{
-    grid-template-columns: repeat(3, 350px);
-    justify-content: center;
-    gap: 3rem;
-    
-
-}
-
-.process__content{
-    padding: 10px 15px;
-}
-
-.process__icons{
-    font-size: 2rem;
-    margin-right: 10px;
     color: $text-color;
+    
+  }
+  &__descritpion {
+    color: $text-color-dark;
+    margin-top: $mb-1;
+  }
 }
 
+.process__container {
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.process__content {
+  padding: 10px 15px;
+}
 
 @media screen and (max-width: 992px) {
-  
-    .process__container{
-        grid-template-columns: repeat(2, 270px);
-    }
-
+  .process__container {
+    grid-template-columns: repeat(2, 270px);
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .process__container{
-        grid-template-columns: 1fr;
-    }
+  .process__container {
+    grid-template-columns: 1fr;
+  }
 }

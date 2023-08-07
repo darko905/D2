@@ -1,0 +1,69 @@
+.contact {
+  &__container {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+    @media screen and (max-width: 992px) {
+      column-gap: 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
+  }
+  &__content {
+    width: 60rem;
+    padding: 5rem;
+    background-color: $second-color;
+    background-image: url("/src/assests/contact-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px) {
+      margin: 2rem auto;
+      padding: 0.5rem 1.5rem;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      margin: 2rem auto;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  &__form-div {
+    position: relative;
+    margin-bottom: $mb-2;
+    height: 4rem;
+  }
+  &__form-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 1px solid $title-color;
+    background: none;
+    color: $text-color;
+    outline: none;
+    padding: 1.5rem;
+    z-index: 1;
+  }
+
+  &__form-area {
+    height: 11rem;
+  }
+  &__form-area textarea {
+    resize: none;
+  }
+}

@@ -9,6 +9,9 @@
 @import './counter';
 @import './projects';
 @import './process';
+@import './banner';
+@import './contact';
+@import './footer';
 
 
 
@@ -42,27 +45,7 @@ h3 {
     color: $title-color;
     font-weight: $font-semi-bold;
 }
-/*-----h1 before----*/
-h1{
-    position: relative;
-}
-h1::before,
-h1::after {
-    content: '';
-    width: 150px;
-    height: 3px;
-    display: inline-block;
-    background-color: $title-color;
-    vertical-align: 0.3em;
-    margin: 0 -100%;
-}
-h1::before {
-    margin-right: 0.75em;
-}
 
-h1::after {
-    margin-left: 0.75em;
-}
 
 
 ul {
@@ -91,13 +74,27 @@ img {
 
 .section__title {
     font-size: $h1-font-size;
-    color: $title-color;
+    letter-spacing: .2rem;
+    color: $text-color;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.section__title::before{
+    content: '';
+    width: 36px;
+    height: 28px;
+    margin-right: 10px;
+    background: url(../assests/arrow.png) no-repeat 100% 100%;
 }
 
 .section__subtitle {
     display: block;
     font-size: $small-font-size;
     margin-bottom: 4rem;
+    color: $title-color;
 }
 
 .section__title,
@@ -120,14 +117,37 @@ img {
 /*Buttons*/
 .button {
     display: inline-block;
-    background-color: $title-color;
-    color: $body-color;
-    padding: 1.25rem 3rem;
+    // border: 2px solid $title-color;
+    border: none;
+    color: $white-color;
+    padding: 1rem 5rem;
     font-weight: $font-medium;
+    background-color: transparent;
+    position: relative;
+}
+.button::after,
+.button::before{
+    position: absolute;
+    width: 53px;
+    height: 43px;
+    content: "";
+  
+}
+.button::before{
+    left: 0;
+  top: 0;
+  border-left: 4px solid $title-color;
+  border-top: 4px solid $title-color;
+}
+.button::after{
+    right: 0;
+  bottom: 0;
+  border-right: 4px solid $title-color;
+  border-bottom: 4px solid $title-color;
 }
 
 .button:hover {
-    background-color: $title-color-dark;
+    background-color: $title-color;
 }
 
 .button__icon {
@@ -162,44 +182,14 @@ img {
     body {
         margin: 0 0 4.5rem 0;
     }
-    /*-----h1 before----*/
-    h1::before,
-    h1::after {
-        content: '';
-        width: 30px;
-        height: 3px;
-        display: inline-block;
-        background-color: $title-color;
-        vertical-align: 0.3em;
-        margin: 0 -100%;
-    }
-
-    h1::before {
-        margin-right: 0.10em;
-    }
-
-    h1::after {
-        margin-left: 0.10em;
-    }
-    /*-----h2 before----*/
-    h2::before,
-    h2::after {
-        content: '';
-        width: 50px;
-        height: 3px;
-        display: inline-block;
-        background-color: $title-color;
-        vertical-align: 0.3em;
-        margin: 0 -100%;
-    }
-
-    h2::before {
-        margin-right: 0.50em;
-    }
-
-    h2::after {
-        margin-left: 0.50em;
-        }
+    .button::after,
+.button::before{
+    
+    width: 43px;
+    height: 33px;
+    
+  
+}
 
     .section__subtitle {
         margin-bottom: $mb-3;

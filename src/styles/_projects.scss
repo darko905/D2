@@ -1,22 +1,59 @@
 .projects{
     &__container{
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(2, 500px);
         justify-content: center;
         gap: 3rem;
     }
     &__content{
+        margin-top: 4rem;
         text-align: center;
-        background-color: $white-color;
-        border-radius: 10px;
+        border-radius: 0.2rem;
         padding: 10px 15px;
+        @media screen and (max-width: 768px) {
+            border-bottom: 2px solid $second-color;
+        }
+        
     }
     &__title{
         font-size: $h3-font-size;
         margin-bottom: $mb-1;
+        color: $text-color;
+    }
+    &__tools{
+        display: flex;
+        justify-content: center;
+        margin-bottom: $mb-1;
+
+        &-text{
+            padding: 0 1rem ;
+        }
+        
+       
+        
     }
     &__descritpion{
         margin-bottom: $mb-1;
+        color: $text-color-dark;
     }
+}
+.button__read-more{
+    outline: none;
+    -webkit-box-align: center;
+    background-color: transparent;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-underline-position: under;
+    
+    text-align: center;
+    // border-bottom: 1px solid $white-color;
+    color: $white-color;
+    // padding: 0.5rem 0;
+
+    background-color: transparent;
+    position: relative;
+    gap: 0.3rem;
 }
 
 @media screen and (max-width: 992px) {

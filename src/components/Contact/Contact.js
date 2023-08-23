@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_r6fwoup",
+      "template_i3gye5n",
+      form.current,
+      "os3OQ461k88uDA9mY"
+    );
+    e.target.reset();
+  };
+
+  const showToastMessage = () => {
+    toast.success("Uspešno poslato !", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
   return (
     <section className="section contact" id="contact">
       <h2 className="section__title">Kontakt</h2>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <form className="contact__form">
+          <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <input
                 type="text"
@@ -41,7 +64,11 @@ const Contact = () => {
                 placeholder="Vaša poruka..."
               ></textarea>
             </div>
-            <button className="button button-flex">Posaljite</button>
+            
+            <button onClick={showToastMessage} className="button button-flex">
+              Posaljite
+            </button>
+            <ToastContainer />
           </form>
         </div>
       </div>

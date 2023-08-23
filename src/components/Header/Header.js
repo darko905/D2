@@ -28,27 +28,27 @@ const Header = () => {
                     <ul className='nav__list '>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#home' onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
-                                NASLOVNA
+                                HOME
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
-                                O NAMA
+                                ABOUT
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#service' onClick={() => setActiveNav('#service')} className={activeNav === "#service" ? "nav__link active-link" : "nav__link"}>
-                                USLUGE
+                                SERVICES
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#projects' onClick={() => setActiveNav('#projects')} className={activeNav === "#project" ? "nav__link active-link" : "nav__link"}>
-                                PROJEKTI
+                                PROJECTS
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
-                                KONTAKT
+                                CONTACT
                             </a>
                         </li>
                     </ul>

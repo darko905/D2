@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="container">
         <div className="banner__text marque">
             <h1>
-                Web <span>Design</span>  Agency
+                Web <span>Dizajn</span>  Agencija
             </h1>
         </div>
       </div>

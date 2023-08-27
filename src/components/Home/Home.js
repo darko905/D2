@@ -8,11 +8,11 @@ const Home = () => {
         <div className="home__content ">
           <div className="home__data">
             <h1 className="home__title">
-              WEB <br /> <span className="home__title-stroke">DESIGN</span>{" "}
-              <br /> AGENCY
+              WEB <br /> <span className="home__title-stroke">DIZAJN</span>{" "}
+              <br /> AGENCIJA
             </h1>
             <a href="#contact">
-              <button className="button button-flex">Contact</button>
+              <button className="button button-flex">Kontakt</button>
             </a>
           </div>
         </div>

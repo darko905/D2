@@ -7,7 +7,7 @@ import Developer from '../../assests/icons/developer.png'
 const Process = () => {
   return (
     <section className="section process" id="process">
-      <h2 className="section__title">Od ideje do realizacije</h2>
+      <h2 className="section__title">Kako poslujemo</h2>
       
 
       <div className="process__container container grid">

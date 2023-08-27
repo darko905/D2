@@ -1,135 +1,129 @@
 .header {
-    width: 100%;
-    position: fixed;
-    top: -5px !important;
-    left: 0;
-    z-index: $z-fixed;
-    // background-color: $body-color;
-    // box-shadow: 0 2px 2px -2px $title-color;
+	width: 100%;
+	position: fixed;
+	top: -5px !important;
+	left: 0;
+	z-index: $z-fixed;
+	// background-color: $body-color;
+	// box-shadow: 0 2px 2px -2px $title-color;
 }
-.scroll-header{
-    background-color: $second-color;
+.scroll-header {
+	background-color: $second-color;
 }
 
 .nav {
-    height: $header-height;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 1rem;
-    color: $white-color;
+	height: $header-height;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 1rem;
+	color: $white-color;
 
-    &__logo,
-    &__toggle{
-        color: $white-color;
-        font-weight: $font-semi-bold;
-        font-size: $h3-font-size;
-    }
+	&__logo,
+	&__toggle {
+		color: $white-color;
+		font-weight: $font-semi-bold;
+		font-size: $h3-font-size;
+	}
 
-    &__logo-img{
-        width: 150px;
-        height: 50px;
-    }
+	&__logo-img {
+		width: 150px;
+		height: 50px;
+	}
 
-    &__list{
-        display: flex;
-        column-gap: 2rem;
-        color: $white-color;
-    }
+	&__list {
+		display: flex;
+		column-gap: 2rem;
+		color: $white-color;
+	}
 
-    &__item {
-        color: $white-color;
-    }
+	&__item {
+		color: $white-color;
+	}
 
-    &__link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: $h3-font-size;
-        color: $white-color;
-        transition: .3s;
-    }
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: $h3-font-size;
+		color: $white-color;
+		transition: 0.3s;
+	}
 
-    &__close,
-    &__toggle{
-        display: none;
-    }
+	&__close,
+	&__toggle {
+		display: none;
+	}
 }
 /*Active link*/
 .active-link,
 .nav__link:hover {
-    color: $white-color;
-    position: relative;
+	color: $white-color;
+	position: relative;
 }
 
 .active-link::before {
-    content: '';
-    position: absolute;
-    bottom: -0.55rem;
-    width: 100%;
-    height: 0.3rem;
-    background-color: $body-color;
+	content: "";
+	position: absolute;
+	bottom: -0.55rem;
+	width: 100%;
+	height: 0.3rem;
+	background-color: $white-color;
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        top: initial;
-        // box-shadow: 0 1px 1px 0px $title-color;
+	.header {
+		top: initial;
+		// box-shadow: 0 1px 1px 0px $title-color;
+	}
 
-    }
+	.nav {
+		height: 5rem;
 
-    .nav {
-        height: 5rem;
+		&__menu {
+			position: fixed;
+			background-color: $second-color;
+			color: $white-color;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: -100%;
+			padding: 4rem 0 0 3rem;
+			z-index: $z-fixed;
+			transition: 0.4s;
+		}
 
-        &__menu {
-            position: fixed;
-            background-color: $second-color;
-            color: $white-color;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            right: -100%;
-            padding: 4rem 0 0 3rem;
-            z-index: $z-fixed;
-            transition: .4s;
-        }
+		&__list {
+			flex-direction: column;
+			row-gap: 1.5rem;
+			align-items: flex-start;
+		}
 
-        &__list {
-            flex-direction: column;
-            row-gap: 1.5rem;
-            align-items: flex-start;
-    
-        }
+		&__link {
+			color: $white-color;
+		}
 
+		&__close {
+			font-size: 1.2rem;
+			position: absolute;
+			top: 1rem;
+			right: 1.25rem;
+			cursor: pointer;
+			color: $white-color;
+		}
 
-        &__link{
-            color: $white-color;
-        }
+		&__close,
+		&__toggle {
+			display: block;
+		}
+	}
 
-        &__close {
-            font-size: 1.2rem;
-            position: absolute;
-            top: 1rem;
-            right: 1.25rem;
-            cursor: pointer;
-            color: $white-color;
-        }
-
-       
-
-        &__close,
-        &__toggle{
-            display: block;
-        }
-    }
-
-    /*show menu*/
-    .show-menu {
-        right: 0;
-    }
-
+	/*show menu*/
+	.show-menu {
+		right: 0;
+	}
 }
 
-.nav__item{
-    color: white;
+.nav__item {
+	color: white;
 }
